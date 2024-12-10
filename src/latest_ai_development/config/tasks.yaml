@@ -1,17 +1,19 @@
-research_task:
+strategy_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2024.
+    Develop a comprehensive strategy for creating a 1-page pitch for {topic}.
+    Identify the key value propositions, target audience, and unique selling points.
+    Ensure the strategy aligns with current market trends in 2024.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+    A strategic outline detailing the key elements to include in the 1-page pitch,
+    including value propositions, target audience insights, and unique selling points.
+  agent: pitch_strategist
 
-reporting_task:
+content_creation_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Using the strategic outline provided, create engaging and persuasive content
+    for the 1-page pitch of {topic}. Ensure the content is clear, concise, and impactful.
+    Format the final pitch as a markdown document without code blocks.
   expected_output: >
-    A fully fledge reports with the mains topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    A polished 1-page pitch document in markdown format, effectively communicating
+    the value and uniqueness of {topic} to the target audience.
+  agent: content_creator
