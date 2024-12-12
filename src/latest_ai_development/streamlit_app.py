@@ -1,4 +1,8 @@
 # src/latest_ai_development/streamlit_app.py
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 from crew import LatestAiDevelopment  # Adjusted import
 import os
